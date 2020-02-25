@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Proyecto ATI</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/custom.css">
+    <script src="https://kit.fontawesome.com/d1a665b459.js" crossorigin="anonymous"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">Proyecto ATI</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+                aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+                <div class="my-2 my-lg-0">
+                    <button class="btn btn-primary my-2 my-sm-0" type="button" data-toggle="modal">Juanito
+                        Perez</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5 text-center">
+        <div id="pregunta1">
+            <h2>Prueba de certificación: ATI</h2>
+            <h4>Pregunta #1</h4>
+            <p class="text-left">
+                El componente del navegador que muestra todas las partes visibles del navegador,
+                excepto la ventana principal donde se muestra la página solicitada se llama:
+            </p>
+            <form action=".">
+                <div class="row radio">
+                    <label><input type="radio" name="optradio" checked> Intérprete Javascript</label>
+                </div>
+                <div class="row radio">
+                    <label><input type="radio" name="optradio"> Interfaz de Usuario</label>
+                </div>
+                <div class="row radio">
+                    <label><input type="radio" name="optradio"> Motor de renderización</label>
+                </div>
+                <div class="row radio">
+                    <label><input type="radio" name="optradio"> Servidor de la interfaz</label>
+                </div>
+            </form>
+            <div class="align-content-center">
+                <button class="btn btn-danger col-sm-2">Atrás</button>
+                <button class="btn btn-primary col-sm-2">Siguiente</button>
+            </div>         
+        </div>
+    </div>
+</body>
+
+</html>
