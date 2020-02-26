@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Proyecto ATI</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/fontawesome.min.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v6.0&appId=2104619329815044&autoLogAppEvents=1">
+    </script>
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">Proyecto ATI</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+                aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+                <div class="my-2 my-lg-0">
+                    <button class="btn btn-primary my-2 my-sm-0" type="submit">Logout</button>
+                    <!-- Modal Login -->
+                    <button class="btn btn-primary my-2 my-sm-0" type="button" data-toggle="modal"
+                        data-target="#loginModalCenter">Configuración</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="loginModalCenter" tabindex="-1" role="dialog" aria-labelledby="loginModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLongTitle">Perfil</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <form action="." class="mx-auto">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail4">Nombre</label>
+                                    <input type="email" class="form-control" id="inputEmail4" placeholder="John">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputPassword4">Apellido</label>
+                                    <input type="password" class="form-control" id="inputPassword4" placeholder="Doe">
+                                </div>
+                            </div>
+                            <div class="form-group col-12">
+                                <label for="username">Nombre de usuario</label>
+                                <input type="email" class="form-control" id="username"
+                                    aria-describedby="emailHelp" placeholder="johndoe@gmail.com">
+                            </div>
+                            <div class="form-group col-12">
+                                <label for="password">Contraseña</label>
+                                <input type="password" class="form-control" id="password"
+                                    placeholder="qwerty12345">
+                                <small id="emailHelp" class="form-text text-muted">La contraseña debe tener al menos 8 caracteres.
+                                </small>
+                                <small id="emailHelp" class="form-text text-muted">La contraseña debe contener letras mayúsculas y minúsculas, cifras y caracteres especiales.
+                                </small>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Actualizar</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
